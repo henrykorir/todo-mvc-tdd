@@ -79,7 +79,7 @@ describe('controller', function () {
 		});
 
 		it('should show all entries without "all" route', function () {
-			var todo = {title: 'my todo'};
+			var todo = {id: 42, title: 'my todo', completed: false};
 			setUpModel([todo]);
 
 			subject.setView('#/');
